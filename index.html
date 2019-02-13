@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+
+<style>
+  #fb-btn,#gSignIn{
+    margin-top:20px;
+  }
+  #profile, #logout{
+    display:none;
+  }
+</style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<a class="navbar-brand" href="#">Social Auth</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarColor01">
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  </li>
+</ul>
+<ul class="navbar-nav navbar-right">
+  <button onclick="logout()"  id="logout">logout</button>
+  <fb:login-button id="fb-btn" data-width="240" data-size="large" data-button-type="login_with"
+  scope="public_profile,email"
+
+  onlogin="checkLoginState();"
+  >Login With
+</fb:login-button>
+</div>
+</nav>
+
+<div class="container">
+<h3 id="heading">Login to View Profile</h3>
+</div>
+
+</body>
+</html>
