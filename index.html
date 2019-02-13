@@ -36,17 +36,14 @@
 </nav>
 
 <div class="container">
-  <ul class="navbar-nav navbar-right">
+  <ul>
   <button onclick="logout()"  id="logout">logout</button>
   <fb:login-button id="fb-btn" data-width="240" data-size="large" data-button-type="login_with"
-  scope="public_profile,email"
-
-  onlogin="checkLoginState();"
-  >Login With
-</fb:login-button>
+  scope="public_profile,email"  onlogin="checkLoginState();">Login With</fb:login-button>
 </div>
 <div id="gSignIn"></div>
-<h3 id="heading">Login to View Profile</h3>
+  </ul>
+
 <div class="userContent" style="display: none;"></div>
   <div id ="profile"> </div>
 </div>
