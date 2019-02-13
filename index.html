@@ -5,13 +5,15 @@
   <title></title>
 </head>
 <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
-  <script src="myscript.js"></script>
+<script src="facebook.js" charset="utf-8"></script>
+<script src="gmail.js" charset="utf-8"></script>
+
 
 <style>
-  #fb-btn{
+  #fb-btn,#gSignIn{
     margin-top:20px;
   }
-  #profile{
+  #profile, #logout{
     display:none;
   }
 </style>
@@ -37,13 +39,13 @@
   >Login With
 </fb:login-button>
 </div>
+<div id="gSignIn"></div>
 </nav>
 
 <div class="container">
 <h3 id="heading">Login to View Profile</h3>
+<div class="userContent" style="display: none;"></div>
 </div>
-<div id="profile">
 
-</div>
 </body>
 </html>
