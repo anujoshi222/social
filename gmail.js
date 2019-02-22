@@ -1,9 +1,9 @@
 function renderButton() {
     gapi.signin2.render('gSignIn', {
         'scope': 'profile email',
-        'width': 120,
+        'width': 240,
         'height': 40,
-      
+        'longtitle': true,
         'theme': 'dark',
         'onsuccess': onSuccess,
         'onfailure': onFailure
