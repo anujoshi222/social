@@ -82,8 +82,8 @@ function HandleGoogleApiLibrary() {
 			// Initialize client library
 			// clientId & scope is provided => automatically initializes auth2 library
 			gapi.client.init({
-		    	apiKey: 'xxxxxxxxxxxxxxxxxxxxxx',
-		    	clientId: 'xxxxxxxxxxxxxxxxxxxxxx',
+		    	
+		    	clientId: '660738551433-bn6qdjjs34eq9b6daei4vhdkrgvtj98b.apps.googleusercontent.com"',
 		    	scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me'
 			}).then(
 				// On success
